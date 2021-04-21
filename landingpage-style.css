@@ -9,6 +9,7 @@ body {
 	margin: 0 auto;
 	font-family: verdana;
 	background-image: url(https://lifegetsbetter.ph/bg.jpg);
+	scroll-padding: 1.5rem 0 0 0;
 }
 
 #landingPage-wrapper {
