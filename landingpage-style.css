@@ -1,0 +1,224 @@
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	max-width: 93.75rem;
+	margin: 0 auto;
+	font-family: verdana;
+	background-image: url(https://lifegetsbetter.ph/bg.jpg);
+}
+
+#landingPage-wrapper {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"g-header"
+	"g-main";
+}
+
+header {
+	grid-area: g-header;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 10
+}
+
+main {
+	grid-area: g-main;
+}
+
+#header {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 6rem;
+}
+
+.logo-wrapper {
+	padding: 5px;
+}
+
+.logo-wrapper img {
+	display: block;
+	margin: 0 auto;
+}
+
+#nav-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	height: 5rem;
+}
+
+.nav-link {
+	margin: 0 40px;
+}
+
+.nav-link {
+	color: #222;
+	text-decoration: none;
+	line-height: 6rem;
+}
+
+h1#video-tutorial-text {
+	width: 100%;
+	background-color: #f5ef34;
+	line-height: 4rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+#video {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 20px 0;
+}
+ 
+ 
+.subscribe-wrapper {
+	max-width: 100%;
+	padding: 1.25rem;
+	background-color: #178542;
+}
+
+.subscribe-wrapper h2 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2.2rem;
+	color: #d93031;
+	text-shadow: 1px 1px 1px #fff;
+	padding: 20px;
+}
+
+#form {
+	display: block;
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.subsribe-form-group {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1.5rem;
+}
+
+#email-label {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 300;
+	margin-bottom: .2rem;
+}
+
+input#email, #submit {
+	padding: .5rem;
+	border-radius: 5px;
+	font-size: 1.25rem;
+}
+
+ h2#other-recipes-text{
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: #d93031;
+	text-shadow: 1px 1px 1px #222;
+	padding: 10px 0;
+}
+
+#recipes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.other-recipes {
+	position: relative;
+	margin: 10px;
+}
+
+.other-recipes h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #f5ef34;
+	padding: 3px 0;
+	width: 100%;
+	color: #222;
+	text-align: center;
+	font-weight: 300;
+}
+
+.other-recipes a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #178542;
+	padding: 3px 0;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+
+.other-recipes img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 1000px) {
+.other-recipes h3, .other-recipes a {
+	font-size: .8rem;
+}
+
+
+@media (max-width: 700px) {
+
+.side-padding {
+	padding: 0 20px;
+}
+#header {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 6rem 3rem;
+}
+#nav-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 2rem;
+}
+
+.nav-link {
+	line-height: 2rem;
+}
+
+h1#video-tutorial-text {
+	font-size: 1rem;
+}
+
+.subscribe-wrapper h2 {
+	font-size: 1.5rem;
+}
+
+#recipes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.other-recipes h3, .other-recipes a {
+	font-size: initial;
+}
+
+.other-recipes {
+	position: relative;
+	margin: 10px 20px;
+}
+
+}
