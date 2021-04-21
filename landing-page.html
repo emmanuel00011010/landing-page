@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="landingpage-style.css">
+</head>
+<body>
+	<div id="landingPage-wrapper">
+		<header id="header">
+			<div class="logo-wrapper">
+				<img id="header-img" src="https://www.delmontephil.com/hs-fs/hubfs/Hompage/logo.png?width=108&name=logo.png">
+			</div>
+			<div class="nav-bar-wrapper">
+				<nav id="nav-bar">
+					<div ><a class="nav-link" href="#video-tutorial">Tutorial</a></div>
+					<div ><a class="nav-link" href="#subscribe">Subscribe</a></div>
+					<div ><a class="nav-link" href="#recipes">Recipes</a></div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section id="video-tutorial" class="video-wrapper">
+				<h1 id="video-tutorial-text">Watch this video tutorial of one of our recipes.</h1>
+				<div class="video-landingPage-wrapper side-padding">
+					<iframe id="video" width="852px" height="480px" src="http://www.youtube.com/embed/C3Xk_08fOV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+			<section id="subscribe" class="subscribe-wrapper">
+				<h2>Subscribe to our Newsletter for more Recipes and News</h2>
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<div class="subsribe-form-group">
+						<!--label id="email-label" for="email">Email</label-->
+						<input id="email" type="email" name="email" placeholder="Your Email Address" required/>
+					</div>
+					<div class="subsribe-form-group">
+						<input type="submit" id="submit" value="Submt">
+					</div>
+				</form>
+			</section>
+			<h2 id="other-recipes-text">Check these recipes</h2>
+			<section id="recipes">
+				<div id="other-recipe-1" class="other-recipes">
+					<h3>Fiesta Dome Cake</h3>
+					<img src="https://api.lifegetsbetter.ph/uploads/recipes/featured/Fiesta-Dome-Cake.jpg" alt="Fiesta-Dome-Cake">
+					<a href="#">View</a>
+				</div>
+				<div id="other-recipe-2" class="other-recipes">
+					<h3>Chunky Chicken Pine</h3>
+					<img src="https://api.lifegetsbetter.ph/uploads/recipes/featured/Chunky-Chicken-Pine-Spread.jpg" alt="Chunky-Chicken-Pine-Spread">
+					<a href="#">View</a>
+				</div>
+				<div id="other-recipe-3" class="other-recipes">
+					<h3>CornedBeef Guisado</h3>
+					<img src="https://api.lifegetsbetter.ph/uploads/recipes/featured/CornedBeefGuisado-Featured.jpg" alt="CornedBeef Guisado">
+					<a href="#">View</a>
+				</div>
+			</section>
+		</main>
+	</div><br />
+</body>
+</html>
